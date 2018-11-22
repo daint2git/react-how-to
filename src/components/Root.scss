@@ -1,0 +1,36 @@
+@import 'utils/colors.scss';
+@import 'utils/variables.scss';
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: $fu_c_peter_river;
+  min-height: 100vh;
+
+  & .header {
+    font-size: calc($fs_large + 2vmin);
+  }
+
+  & .logo {
+    margin-top: 2vmin;
+    height: 30vmin;
+    animation: logoSpin 20s linear infinite;
+  }
+
+  & .text {
+    font-size: calc($fs_medium + 2vmin);
+    margin-top: 2vmin;
+  }
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

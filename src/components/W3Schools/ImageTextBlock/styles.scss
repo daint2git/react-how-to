@@ -1,0 +1,25 @@
+@import 'utils/colors.scss';
+@import 'utils/variables.scss';
+
+.root {
+  .card {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .text-block {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 20px;
+      background: rgba(0, 0, 0, .2);
+      text-align: center;
+      color: white;
+      font-size: $fs_large;
+      font-weight: 700;
+    }
+  }
+}
