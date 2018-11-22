@@ -1,4 +1,4 @@
-# react-webpack-template
+# react-how-to
 
 ## Development Mode
 ### yarn run
