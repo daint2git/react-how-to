@@ -8,6 +8,6 @@ services:
     volumes:
       - .:/usr/src/app
     ports:
-      - "9999:9999"
+      - '9999:9999'
     environment:
       - CHOKIDAR_USEPOLLING=true

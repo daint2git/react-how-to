@@ -1,7 +1,7 @@
-import imgChania from 'images/chania.jpg'
+import imgMountains from 'images/mountains.jpg'
+import imgLights from 'images/lights.jpg'
 import imgNature from 'images/nature.jpg'
-import imgParis from 'images/paris.jpg'
-import imgWedding from 'images/wedding.jpg'
+import imgSnowWide from 'images/snow_wide.jpg'
 import cssModuleNameTag from 'utils/cssModuleNameTag'
 import styles from './styles.scss'
 
@@ -16,10 +16,10 @@ const Header = () => (
 
 const Row = () => (
   <div className={cssModules`row`}>
-    <Column src={imgChania} />
+    <Column src={imgMountains} />
+    <Column src={imgLights} />
     <Column src={imgNature} />
-    <Column src={imgParis} />
-    <Column src={imgWedding} />
+    <Column src={imgSnowWide} />
   </div>
 )
 

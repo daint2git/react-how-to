@@ -1,0 +1,73 @@
+@import 'utils/colors.scss';
+@import 'utils/variables.scss';
+
+.root {
+
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &>a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $fs_x_large;
+      transition: all 300ms ease;
+      padding: 15px;
+
+      &>svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .facebook {
+      background: #3B5998;
+      color: $white;
+    }
+
+    .twitter {
+      background: #55ACEE;
+      color: $white;
+    }
+
+    .google {
+      background: #DD4B39;
+      color: $white;
+    }
+
+    .linkedin {
+      background: #007BB5;
+      color: $white;
+    }
+
+    .youtube {
+      background: #BB0000;
+      color: $white;
+    }
+
+    .instagram {
+      background: #125688;
+      color: $white;
+    }
+  }
+
+  .content {
+    margin-left: 5em;
+
+    &>h1 {
+      margin: 1.2em 0;
+      font-size: $fs_xxxx_large;
+    }
+
+    &>p {
+      margin: 1em 0;
+      font-size: $fs_x_large;
+    }
+  }
+}

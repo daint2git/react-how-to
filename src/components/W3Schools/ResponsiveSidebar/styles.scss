@@ -1,0 +1,142 @@
+@import 'utils/colors.scss';
+@import 'utils/variables.scss';
+
+.root {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 4em;
+
+    &>h1 {
+      text-align: center;
+      font-size: calc($fs_large + 2vmin);
+      padding: 1em 0;
+    }
+
+    &>p {
+      text-indent: 0.5em;
+      font-size: calc($fs_large + 1vmin);
+      padding: 0.5em 0;
+    }
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    color: $white;
+
+    &>img {
+      width: 1.2em;
+      height: 1.2em;
+    }
+  }
+
+  .sidebar-trigger {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    transition: all .3s ease-in;
+    background-color: $fu_c_belize_hole;
+  }
+
+  .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: -15em;
+    overflow: hidden;
+    width: 15em;
+    height: 100%;
+    transition: all .3s ease-in;
+    background-color: $fu_c_peter_river;
+  }
+
+  .sidebar-nav:hover,
+  .sidebar-nav:focus,
+  .sidebar-trigger:focus+.sidebar-nav,
+  .sidebar-trigger:hover+.sidebar-nav {
+    left: 0;
+  }
+
+  .sidebar-nav ul {
+    position: absolute;
+    top: 4em;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 15em;
+  }
+
+  .sidebar-nav ul li {
+    width: 100%;
+  }
+
+  .sidebar-nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 4em;
+    transition: all .3s ease;
+
+    &>.text {
+      font-size: 1.2em;
+      color: $white;
+    }
+  }
+
+  .sidebar-nav-link:hover {
+    background-color: $fu_c_belize_hole;
+  }
+
+  @media (min-width: 42em) {
+    .content {
+      margin-left: 4em;
+      margin-top: 0em;
+    }
+
+    .sidebar-trigger {
+      width: 4em;
+    }
+
+    .sidebar-nav {
+      width: 4em;
+      left: 0;
+    }
+
+    .sidebar-nav:hover,
+    .sidebar-nav:focus,
+    .sidebar-trigger:hover+.sidebar-nav,
+    .sidebar-trigger:focus+.sidebar-nav {
+      width: 15em;
+    }
+  }
+
+  @media (min-width: 68em) {
+    .content {
+      margin-left: 15em;
+      margin-top: 0em;
+    }
+
+    .sidebar-trigger {
+      display: none
+    }
+
+    .sidebar-nav {
+      width: 15em;
+    }
+
+    .sidebar-nav ul {
+      top: 1em;
+    }
+  }
+}
