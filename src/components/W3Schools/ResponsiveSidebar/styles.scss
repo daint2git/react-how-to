@@ -98,7 +98,7 @@
     background-color: $fu_c_belize_hole;
   }
 
-  @media (min-width: 42em) {
+  @media (min-width: 768px) {
     .content {
       margin-left: 4em;
       margin-top: 0em;
@@ -121,7 +121,7 @@
     }
   }
 
-  @media (min-width: 68em) {
+  @media (min-width: 1025px) {
     .content {
       margin-left: 15em;
       margin-top: 0em;
