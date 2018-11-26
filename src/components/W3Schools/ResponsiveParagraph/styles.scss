@@ -1,0 +1,14 @@
+@import 'utils/variables.scss';
+
+.root {
+  font-size: $fs_medium;
+  transition: all .3s ease;
+
+  @media screen and (min-width: 768px) {
+    font-size: $fs_large;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: $fs_x_large;
+  }
+}

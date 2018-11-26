@@ -13,6 +13,8 @@ passages, and more recently with desktop publishing software like Aldus PageMake
 versions of Lorem Ipsum.
 `
 
-const Paragraph = ({ children = DEFAULT_TEXT }) => <p className={cssModules`root`}>{children}</p>
+const ResponsiveParagraph = ({ children = DEFAULT_TEXT }) => (
+  <p className={cssModules`root`}>{children}</p>
+)
 
-export default Paragraph
+export default ResponsiveParagraph

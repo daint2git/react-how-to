@@ -12,16 +12,15 @@
 
     &>p {
       text-indent: 0.5em;
-      font-size: calc($fs_large + 1vmin);
       padding: 0.5em 0;
     }
   }
 
-  .row {
+  .images {
     display: flex;
     flex-wrap: wrap;
 
-    .column {
+    .image {
       flex: 100%;
       max-width: 100%;
       padding: 1em;
@@ -39,15 +38,22 @@
       }
     }
 
-    @media screen and (min-width: 768px) {
-      .column {
+    @media screen and (min-width: 600px) {
+      .image {
         flex: 50%;
         max-width: 50%;
       }
     }
 
+    @media screen and (min-width: 768px) {
+      .image {
+        flex: 33.3%;
+        max-width: 33.3%;
+      }
+    }
+
     @media screen and (min-width: 1025px) {
-      .column {
+      .image {
         flex: 25%;
         max-width: 25%;
       }

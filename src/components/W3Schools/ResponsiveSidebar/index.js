@@ -1,5 +1,5 @@
-import Paragraph from 'components/W3Schools/Paragraph'
-import ResponsiveImageGridV2 from 'components/W3Schools/ResponsiveImageGridV2'
+import ResponsiveParagraph from 'components/W3Schools/ResponsiveParagraph'
+import ResponsiveImageGridV3 from 'components/W3Schools/ResponsiveImageGridV3'
 import menu from 'svg/menu.svg'
 import weddingCouple0 from 'svg/wedding/wedding-couple_0.svg'
 import weddingCouple1 from 'svg/wedding/wedding-couple_1.svg'
@@ -14,6 +14,17 @@ const cssModules = cssModuleNameTag(styles)
 
 const SVGIcon = ({ src }) => <img src={src} alt="icon" />
 
+const ItemLink = ({ src, label }) => (
+  <li>
+    <a className={cssModules`sidebar-nav-link`} href="#0">
+      <span className={cssModules`icon`}>
+        <SVGIcon src={src} />
+      </span>
+      <span className={cssModules`label`}>{label}</span>
+    </a>
+  </li>
+)
+
 const ResponsiveSidebar = () => (
   <div className={cssModules`root`}>
     <a className={cssModules`sidebar-trigger`} href="#0">
@@ -23,62 +34,20 @@ const ResponsiveSidebar = () => (
     </a>
     <nav className={cssModules`sidebar-nav`}>
       <ul>
-        <li>
-          <a className={cssModules`sidebar-nav-link`} href="#0">
-            <span className={cssModules`icon`}>
-              <SVGIcon src={weddingCouple0} />
-            </span>
-            <span className={cssModules`text`}>Wedding 0</span>
-          </a>
-        </li>
-        <li>
-          <a className={cssModules`sidebar-nav-link`} href="#0">
-            <span className={cssModules`icon`}>
-              <SVGIcon src={weddingCouple1} />
-            </span>
-            <span className={cssModules`text`}>Wedding 1</span>
-          </a>
-        </li>
-        <li>
-          <a className={cssModules`sidebar-nav-link`} href="#0">
-            <span className={cssModules`icon`}>
-              <SVGIcon src={weddingCouple2} />
-            </span>
-            <span className={cssModules`text`}>Wedding 2</span>
-          </a>
-        </li>
-        <li>
-          <a className={cssModules`sidebar-nav-link`} href="#0">
-            <span className={cssModules`icon`}>
-              <SVGIcon src={weddingCouple3} />
-            </span>
-            <span className={cssModules`text`}>Wedding 3</span>
-          </a>
-        </li>
-        <li>
-          <a className={cssModules`sidebar-nav-link`} href="#0">
-            <span className={cssModules`icon`}>
-              <SVGIcon src={weddingCouple4} />
-            </span>
-            <span className={cssModules`text`}>Wedding 4</span>
-          </a>
-        </li>
-        <li>
-          <a className={cssModules`sidebar-nav-link`} href="#0">
-            <span className={cssModules`icon`}>
-              <SVGIcon src={weddingCouple5} />
-            </span>
-            <span className={cssModules`text`}>Wedding 5</span>
-          </a>
-        </li>
+        <ItemLink src={weddingCouple0} label="Wedding 0" />
+        <ItemLink src={weddingCouple1} label="Wedding 1" />
+        <ItemLink src={weddingCouple2} label="Wedding 2" />
+        <ItemLink src={weddingCouple3} label="Wedding 3" />
+        <ItemLink src={weddingCouple4} label="Wedding 4" />
+        <ItemLink src={weddingCouple5} label="Wedding 5" />
       </ul>
     </nav>
     <main className={cssModules`content`}>
       <h1>Full View, Please!</h1>
-      <Paragraph />
-      <Paragraph />
-      <Paragraph />
-      <ResponsiveImageGridV2 />
+      <ResponsiveParagraph />
+      <ResponsiveParagraph />
+      <ResponsiveParagraph />
+      <ResponsiveImageGridV3 />
     </main>
   </div>
 )

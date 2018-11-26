@@ -9,7 +9,7 @@ const cssModules = cssModuleNameTag(styles)
 
 const Header = () => (
   <div className={cssModules`header`}>
-    <h1>Responsive Image Grid</h1>
+    <h1>Responsive Image Grid V2</h1>
     <p>Resize the browser window to see the responsive effect.</p>
   </div>
 )

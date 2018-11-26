@@ -20,7 +20,6 @@
 
     &>p {
       text-indent: 0.5em;
-      font-size: calc($fs_large + 1vmin);
       padding: 0.5em 0;
     }
   }
@@ -88,7 +87,7 @@
     height: 4em;
     transition: all .3s ease;
 
-    &>.text {
+    &>.label {
       font-size: 1.2em;
       color: $white;
     }
@@ -98,7 +97,7 @@
     background-color: $fu_c_belize_hole;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .content {
       margin-left: 4em;
       margin-top: 0em;
@@ -121,7 +120,7 @@
     }
   }
 
-  @media (min-width: 1025px) {
+  @media screen and (min-width: 1025px) {
     .content {
       margin-left: 15em;
       margin-top: 0em;
