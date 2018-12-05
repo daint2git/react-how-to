@@ -1,5 +1,5 @@
-import ResponsiveSidebar from 'components/W3Schools/ResponsiveSidebar'
+import SimpleDnDBetweenTwoLists from 'components/ReactBeautifulDnD/SimpleDnDBetweenTwoLists'
 
-const Root = () => <ResponsiveSidebar />
+const Root = () => <SimpleDnDBetweenTwoLists />
 
 export default Root

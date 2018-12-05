@@ -1,0 +1,76 @@
+@import 'utils/colors.scss';
+@import 'utils/variables.scss';
+
+.root {
+  width: 250px;
+
+  .list {
+    background-color: $fu_c_peter_river;
+    border: 1px solid $fu_c_belize_hole;
+
+    &[data-is-dragging-over='true'] {
+      background-color: $fu_c_emerland;
+    }
+
+    >h1 {
+      color: $white;
+      font-size: $fs_xx_large;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+
+  .item {
+    background-color: $white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    >span {
+      display: inline-block;
+      padding: 2px;
+      border-radius: 2px;
+      color: $white;
+      background-color: $fu_c_belize_hole;
+
+      &[data-color='true'] {
+        background-color: $fu_c_alizarin;
+      }
+    }
+
+    >p {
+      margin-top: 5px;
+    }
+
+    &[data-is-dragging='true'] {
+      background-color: $fu_c_sun_flower;
+      color: $white;
+    }
+
+    .footer-of-item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+
+      .icon {
+        .comment-icon {
+          margin-left: 10px;
+
+          >span {
+            margin-left: 3px;
+          }
+        }
+      }
+
+      .image {
+        img {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
