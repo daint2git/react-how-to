@@ -1,5 +1,5 @@
-import SimpleDnDBetweenTwoLists from 'components/ReactBeautifulDnD/SimpleDnDBetweenTwoLists'
+import DragandDrop from 'components/DragandDrop/Example2'
 
-const Root = () => <SimpleDnDBetweenTwoLists />
+const Root = () => <DragandDrop />
 
 export default Root
