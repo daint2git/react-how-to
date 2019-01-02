@@ -1,5 +1,5 @@
-import DragandDrop from 'components/DragandDrop/Example2'
+import Simple from 'components/ReactBeautifulDnD/Simple'
 
-const Root = () => <DragandDrop />
+const Root = () => <Simple />
 
 export default Root
